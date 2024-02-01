@@ -12,7 +12,7 @@ const Page = async () => {
     method: "GET",
     headers: myHeaders,
   };
-  const res = await fetch(`${BASE_BE_URL}/books`, requestOptions);
+  const res = await fetch(`${BASE_BE_URL}/books`, { cache: "no-store" });
   const resJson = await res.json();
   if (!res.ok) {
     const msg = resJson.error ?? "Dashboard component GET books error";
