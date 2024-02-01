@@ -16,6 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   ];
   return (
     <>
+      {/* token? kick admin dashboard */}
       <TokenKick>
         <Header links={links} />
         {children}

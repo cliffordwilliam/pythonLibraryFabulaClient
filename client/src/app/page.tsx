@@ -17,6 +17,7 @@ const Page = () => {
   ];
   return (
     <>
+      {/* token? kick admin dashboard */}
       <TokenKick>
         <Header links={links} />
         <main className="flex-1 bg-gray-100 flex">
